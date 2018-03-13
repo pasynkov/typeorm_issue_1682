@@ -4,61 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "check-node-version --package && nodemon",
-    "build": "tsc",
-    "docker": "npm run docker:build && npm run docker:push",
-    "docker:build": "docker build -t pasynkov/teaser_api:latest .",
-    "docker:push": "docker push pasynkov/teaser_api:latest",
-    "test": "jest --config=jest.json",
-    "test:watch": "jest --watch --config=jest.json",
-    "test:coverage": "jest --config=jest.json --coverage --coverageDirectory=coverage",
-    "e2e": "jest --config=e2e/jest-e2e.json --forceExit",
-    "e2e:watch": "jest --watch --config=e2e/jest-e2e.json",
-    "typeorm": "typeorm",
-    "migrations:create": "node typeorm.js migrations:create -n",
-    "migrations:generate": "node typeorm.js migrations:generate -n",
-    "migrations:run": "node typeorm.js migrations:run",
-    "migrations:revert": "node typeorm.js migrations:revert",
-    "tsc": "tsc"
-  },
-  "engines": {
-    "node": "9.3.0",
-    "npm": "^5.5.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "ssh://git-codecommit.eu-central-1.amazonaws.com/v1/repos/gulliver"
+    "start": "nodemon"
   },
   "author": "Nikolay Pasynkov <n@pasynkov.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "@nestjs/common": "^4.5.9",
-    "@nestjs/core": "^4.5.10",
-    "@nestjs/typeorm": "^2.0.0",
-    "class-validator": "^0.8.1",
-    "moment": "^2.20.1",
-    "moment-timezone": "^0.5.14",
     "pg": "^7.4.1",
-    "reflect-metadata": "^0.1.12",
-    "rxjs": "^5.5.6",
     "typeorm": "^0.1.11",
-    "typescript": "^2.6.2",
-    "uuid": "^3.2.1"
+    "typescript": "^2.6.2"
   },
   "devDependencies": {
-    "@nestjs/testing": "^4.5.5",
-    "@types/jest": "^22.1.0",
-    "@types/moment": "^2.13.0",
-    "@types/moment-timezone": "^0.5.3",
-    "@types/node": "^9.3.0",
-    "@types/supertest": "^2.0.4",
-    "check-node-version": "^3.2.0",
-    "jest": "^22.1.4",
     "nodemon": "^1.14.11",
-    "supertest": "^3.0.0",
-    "ts-jest": "^22.0.1",
-    "ts-node": "^4.1.0",
-    "tslint": "^5.9.1",
-    "tslint-config-airbnb": "^5.5.0"
+    "ts-node": "^4.1.0"
   }
 }

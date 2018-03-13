@@ -17,7 +17,7 @@ module.exports = {
     entities: [
         // NODE_ENV === 'production' ? 'dist/entities/**/*.entity.js' : 'src/entities/**/*.entity{.ts,.js}',
         // 'dist/entities/**/*.entity.js',
-        'src/entities/**/*.entity.{js,ts}',
+        'entities/**/*.entity.{js,ts}',
     ],
     migrations: [
         // NODE_ENV === 'production' ? 'dist/entities/**/*.entity.js' : 'src/entities/**/*.entity{.ts,.js}',
@@ -26,7 +26,7 @@ module.exports = {
     ],
     logging: true,
     cli: {
-        migrationsDir: "src/migrations"
+        migrationsDir: "migrations"
     },
     synchronize: true,
 };

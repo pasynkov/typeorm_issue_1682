@@ -8,35 +8,7 @@ Next start app
 
 ```npm start```
 
-Typeorm will sync DB... 
-
-### Adding country
-```
-POST /countries HTTP/1.1
-Host: localhost:3001
-Content-Type: application/json
-Cache-Control: no-cache
-
-{
-	"name": "Some Country",
-	"code": "SC"
-}
-```
-
-### Adding region
-```
-POST /regions HTTP/1.1
-Host: localhost:3001
-Content-Type: application/json
-Cache-Control: no-cache
-
-{
-	"name": "Some Region",
-	"code": "Some",
-	"country": "SC"
-}
-```
-
+Typeorm will sync DB... and adding entities:
 
 ### Error:
 
