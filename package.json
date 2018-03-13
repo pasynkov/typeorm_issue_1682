@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon"
   },
-  "author": "Nikolay Pasynkov <n@pasynkov.com>",
+  "author": "Nikolay Pasynkov",
   "license": "UNLICENSED",
   "dependencies": {
     "pg": "^7.4.1",
